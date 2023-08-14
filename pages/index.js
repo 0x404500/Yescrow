@@ -9,22 +9,6 @@ import Script from 'next/script';
 
 export default function Home() {
 
-  function addMatomo() {
-    return {
-      __html: `
-      var _paq = window._paq || [];
-      _paq.push(['trackPageView']);
-      _paq.push(['enableLinkTracking']);
-      (function() {
-        _paq.push(['setTrackerUrl', 'https://yescrow.matomo.cloud/piwik.php']);
-        _paq.push(['setSiteId', 1]);
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.type='text/javascript'; g.async=true; g.defer=true; g.src='https://yescrow.matomo.cloud/piwik.js'; s.parentNode.insertBefore(g,s);
-      })();
-      `,
-    };
-  }
-
   function addWebsiteJsonLd() {
     return {
       __html: `{
@@ -101,11 +85,11 @@ export default function Home() {
   return (
     <div class="container max-w-2xl mx-auto justify-center">
       <Head>
-        <title>Deal with online strangers | Ethereum escrow dApp</title>
+        <title>Eskro | BETA </title>
         <meta 
           name="description" 
-          content="Trust internet strangers without worries. Self-release the payment when you get what you wanted. Get your money back if you are unhappy with the transaction." 
-          //When transacting on the internet - use protection: the only way to trust a stranger online is to use an escrow. 
+          content="Jual Beli apapun di eskro secara pribadi, pasti aman dan terpercaya. Karena menjamin perlindungan penjual & pembeli dari awal hingga akhir.
+. 
           key="desc"
           />
         <link rel="canonical" href="https://yescrow.io" />
